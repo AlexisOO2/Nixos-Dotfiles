@@ -1,4 +1,4 @@
-	# Edit this configuration file to define what should be installed on
+# Edit this configuration file to define what should be installed on
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
@@ -17,7 +17,9 @@ in
   home-manager.useGlobalPkgs = true;
   home-manager.backupFileExtension = "backup";
   home-manager.users.aiden = import ./home.nix;
-
+  
+  hardware.xpadneo.enable = true;
+  hardware.xone.enable = true;
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
@@ -27,6 +29,11 @@ in
   services.xserver = {
   	enable = true;
   	windowManager.qtile.enable = true;
+	displayManager.sddm ={
+		enable = true;
+		wayland.enable = true;
+		package = pkgs.plasma5Packages.sddm;
+	};
 	displayManager.sessionCommands = ''
 		xwallpaper --zoom ~/Pictures/Wallpapers/animeskull.png
 		xset r rate 200 35 &
@@ -34,6 +41,11 @@ in
   	#videoDrivers = [ "amdgpu" ];
   	xkb.layout = "es";
 
+  };
+
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
   };
 
   services.picom = {
@@ -183,7 +195,14 @@ programs.steam = {
    blender
    godot_4
    androidStudioPackages.dev
-   nautilus
+   xfce.thunar
+   dunst
+   hyprpaper
+   waybar
+   networkmanagerapplet
+   hyprwall
+   hyprlock
+   cava
 ];
  
   fonts.packages = with pkgs; [

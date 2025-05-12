@@ -53,6 +53,11 @@ in
   	backend = "glx";
 	fade = true;
   };
+   
+  programs.zsh.enable = true;
+  
+  services.gvfs.enable = true;
+  services.udisks2.enable = true;
 
   networking.hostName = "nixos-aiden"; # Define your hostname.
   # Pick only one of the below networking options.
@@ -109,6 +114,7 @@ in
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.aiden = {
     isNormalUser = true;
+    shell = pkgs.zsh;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
       tree
@@ -203,6 +209,16 @@ programs.steam = {
    hyprwall
    hyprlock
    cava
+   playerctl
+   zsh-syntax-highlighting
+   zsh-autosuggestions
+   starship
+   thefuck
+   usbutils
+   udiskie
+   udisks
+   gvfs
+   rclone
 ];
  
   fonts.packages = with pkgs; [

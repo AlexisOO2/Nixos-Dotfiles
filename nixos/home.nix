@@ -24,8 +24,8 @@
       ls = "eza -l --git --no-permissions --no-user --no-filesize --icons --colour=always --git --git-repos";
       lsa = "eza --all --icons --colour=always --git --git-repos -l";
       cat = "bat";
-      nrs = "sudo nixos-rebuild switch";
-      gucb = ''
+      nrs = ''
+      sudo nixos-rebuild switch &&
       sudo cp -r /etc/nixos/ ~/nixos-dotfiles &&
       sudo cp -r .config/alacritty ~/nixos-dotfiles &&
       sudo cp -r .config/qtile ~/nixos-dotfiles &&

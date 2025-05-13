@@ -58,7 +58,6 @@
     enable = true;
     font = "0xProto";
     terminal = "alacritty";
-    theme = "/nix/store/1jqlhlvjsc1cs0vy3sxyd8jx4dai1f42-rofi-1.7.5/share/rofi/themes/Arc-Dark.rasi"; 
   };
   programs.hyprlock = { 
     enable = true;

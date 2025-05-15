@@ -227,6 +227,7 @@ programs.steam = {
    udisks
    gvfs
    rclone
+   hyprshot
 ];
  
   fonts.packages = with pkgs; [

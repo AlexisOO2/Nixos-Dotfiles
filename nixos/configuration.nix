@@ -228,6 +228,7 @@ programs.steam = {
    gvfs
    rclone
    hyprshot
+   teamviewer
 ];
  
   fonts.packages = with pkgs; [

@@ -229,6 +229,7 @@ programs.steam = {
    rclone
    hyprshot
    teamviewer
+   openrgb
 ];
  
   fonts.packages = with pkgs; [

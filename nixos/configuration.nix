@@ -234,6 +234,7 @@ programs.steam = {
    audacity
    antlr4_12
    python312Packages.antlr4-python3-runtime
+   jdk23
 ];
  
   fonts.packages = with pkgs; [

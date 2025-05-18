@@ -235,6 +235,7 @@ programs.steam = {
    antlr4_12
    python312Packages.antlr4-python3-runtime
    jdk23
+   python3Full
 ];
  
   fonts.packages = with pkgs; [

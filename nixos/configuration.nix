@@ -232,6 +232,7 @@ programs.steam = {
    openrgb
    firefox
    audacity
+   antlr4_12
 ];
  
   fonts.packages = with pkgs; [

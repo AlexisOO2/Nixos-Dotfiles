@@ -233,6 +233,7 @@ programs.steam = {
    firefox
    audacity
    antlr4_12
+   python312Packages.antlr4-python3-runtime
 ];
  
   fonts.packages = with pkgs; [

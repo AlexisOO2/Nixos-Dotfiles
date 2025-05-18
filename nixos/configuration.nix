@@ -230,6 +230,8 @@ programs.steam = {
    hyprshot
    teamviewer
    openrgb
+   firefox
+   audacity
 ];
  
   fonts.packages = with pkgs; [

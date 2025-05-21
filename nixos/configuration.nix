@@ -138,7 +138,9 @@ programs.steam = {
   };
   programs.gamemode.enable = true;
 
-
+nixpkgs.config.permittedInsecurePackages = [
+                "electron-33.4.11"
+              ];
 
  nixpkgs.config.allowUnfree = true; 
 
@@ -228,11 +230,9 @@ programs.steam = {
    gvfs
    rclone
    hyprshot
-   teamviewer
-   openrgb
    firefox
    audacity
-   antlr4_12
+   #antlr4_12
    python312Packages.antlr4-python3-runtime
    jdk23
    python3Full

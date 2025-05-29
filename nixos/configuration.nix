@@ -171,6 +171,7 @@ nixpkgs.config.permittedInsecurePackages = [
    fzf
    eza
    bat
+   vscode
    vscodium
    spotify
    pwvucontrol

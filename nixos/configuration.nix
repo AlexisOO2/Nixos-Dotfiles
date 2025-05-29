@@ -232,7 +232,7 @@ nixpkgs.config.permittedInsecurePackages = [
    hyprshot
    firefox
    audacity
-   antlr4_12
+   antlr
    python312Packages.antlr4-python3-runtime
    jdk23
    python3Full

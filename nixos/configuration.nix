@@ -4,7 +4,7 @@
 
 { config, lib, pkgs, ... }:
 let
-  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-24.11.tar.gz";
+  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz";
 in
 {
   imports =
@@ -155,7 +155,6 @@ nixpkgs.config.permittedInsecurePackages = [
    gedit
    brave
    syncthing
-   syncthing-tray
    gcc
    rofi-wayland
    amdgpu_top
@@ -180,7 +179,7 @@ nixpkgs.config.permittedInsecurePackages = [
    discord
    appimage-run
    python312Packages.pip
-   nodejs_23
+   nodejs_24
    cargo
    ripgrep
    lazygit
@@ -217,7 +216,6 @@ nixpkgs.config.permittedInsecurePackages = [
    hyprpaper
    waybar
    networkmanagerapplet
-   hyprwall
    hyprlock
    cava
    playerctl
@@ -233,8 +231,6 @@ nixpkgs.config.permittedInsecurePackages = [
    hyprshot
    firefox
    audacity
-   antlr
-   python312Packages.antlr4-python3-runtime
    jdk23
    python3Full
 ];

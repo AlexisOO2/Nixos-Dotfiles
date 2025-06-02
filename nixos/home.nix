@@ -11,6 +11,24 @@
   home.homeDirectory = "/home/aiden";
   home.stateVersion = "25.05";
 
+  
+  services.clipse = {
+  	enable = true;
+	systemdTarget = "graphical-session.target";
+  };
+
+
+  services.hyprpaper = {
+  	enable = true;
+	settings = {
+	  ipc = "on";
+	  splash = false;
+  	  splash_offset = 2.0;
+	  preload = ["/Pictures/Wallpapers/animeskull.png"];
+	  wallpaper = ["DP-2,/Pictures/Wallpapers/animeskull.png"];
+	};
+  };
+
   programs.zsh = {
     enable = true;
     autosuggestion.enable = true;
@@ -60,10 +78,7 @@
     terminal = "alacritty";
   };
 
-  services.clipse = {
-  	enable = true;
-	systemdTarget = "graphical-session.target";
-  };
+
 
   programs.hyprlock = { 
     enable = true;

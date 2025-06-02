@@ -61,7 +61,8 @@ in
   	backend = "glx";
 	fade = true;
   };
-   
+
+
   programs.zsh.enable = true;
   
   services.gvfs.enable = true;

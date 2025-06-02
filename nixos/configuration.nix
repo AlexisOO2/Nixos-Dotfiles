@@ -155,9 +155,12 @@ nixpkgs.config.permittedInsecurePackages = [
    gedit
    brave
    syncthing
+   otpclient
    gcc
    rofi-wayland
    amdgpu_top
+   clipse
+   gamemode
    #amdvlk
    nvtopPackages.full
    #amdenc

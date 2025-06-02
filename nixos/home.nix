@@ -10,14 +10,18 @@
   home.username = "aiden";
   home.homeDirectory = "/home/aiden";
   home.stateVersion = "25.05"; 
-  home.pointerCursor = {
-  	name = "bibata-cursors";
-	package = pkgs.bibata-cursors;
-  	hyprcursor = {
-  		enable = true;
-		size = 16;
-	};
-  };
+  
+  home.file.".icons/default".source = "${pkgs.bibata-cursors}/share/icons/bibata-cursors"; 
+
+  #home.pointerCursor = {
+  #	name = "bibata-cursors";
+  #	package = pkgs.bibata-cursors;
+  #	hyprcursor = {
+  #		enable = true;
+  #		size = 16;
+  #	};
+  #};
+
   services.clipse = {
   	enable = true;
   };

@@ -9,7 +9,7 @@
   ];
   home.username = "aiden";
   home.homeDirectory = "/home/aiden";
-  home.stateVersion = "24.11";
+  home.stateVersion = "25.05";
 
   programs.zsh = {
     enable = true;

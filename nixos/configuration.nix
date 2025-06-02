@@ -33,7 +33,7 @@ in
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   #boot.initrd.kernelModules = [ "amdgpu" ];
-
+	
   services.xserver = {
   	enable = true;
   	windowManager.qtile.enable = true;

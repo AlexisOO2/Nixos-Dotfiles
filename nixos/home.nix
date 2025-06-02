@@ -59,6 +59,9 @@
     font = "0xProto";
     terminal = "alacritty";
   };
+
+  services.clipse.enable = true;
+
   programs.hyprlock = { 
     enable = true;
     settings = {

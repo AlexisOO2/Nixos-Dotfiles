@@ -236,6 +236,8 @@ nixpkgs.config.permittedInsecurePackages = [
    audacity
    jdk23
    python3Full
+   conky
+   zoxide
 ];
  
   fonts.packages = with pkgs; [

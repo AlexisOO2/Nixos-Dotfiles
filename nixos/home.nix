@@ -60,7 +60,10 @@
     terminal = "alacritty";
   };
 
-  services.clipse.enable = true;
+  services.clipse = {
+  	enable = true;
+	systemdTarget = "graphical-session.target";
+  };
 
   programs.hyprlock = { 
     enable = true;

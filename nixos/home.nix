@@ -11,6 +11,12 @@
   home.homeDirectory = "/home/aiden";
   home.stateVersion = "25.05";
 
+  wayland.windowManager.hyprland = {
+  	enable = true;
+	systemd.enable = true;
+	xwayland.enable = true;
+  };
+
   
   services.clipse = {
   	enable = true;

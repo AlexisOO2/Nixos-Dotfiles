@@ -14,7 +14,6 @@
   
   services.clipse = {
   	enable = true;
-	systemdTarget = "graphical-session.target";
   };
 
 

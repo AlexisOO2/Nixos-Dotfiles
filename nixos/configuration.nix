@@ -239,6 +239,8 @@ nixpkgs.config.permittedInsecurePackages = [
    python3Full
    conky
    zoxide
+   hyprcursor
+   bibata-cursors
 ];
  
   fonts.packages = with pkgs; [

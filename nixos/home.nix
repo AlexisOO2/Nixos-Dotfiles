@@ -33,6 +33,11 @@
 		"sha256-2Fd0OVSCgFZVLRAVo/MxgHp1qK5WUNhKY685XPYrBmk="
 		"bibata-cursors";
 
+
+  programs.zsh.sessionVariables = {
+  	EDITOR = "nvim";
+  };
+
   wayland.systemd.target = "hyprland-session.target";
   wayland.windowManager.hyprland = {
   	enable = true;

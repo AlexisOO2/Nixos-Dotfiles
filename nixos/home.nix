@@ -49,7 +49,6 @@
 			"systemctl"
 			"clipse -listen"
 			"nm-applet"
-			"blueman-applet"
 			"waybar"  
 			"hyprpaper" 
 			"syncthing"
@@ -263,6 +262,7 @@
 
   services.clipse = {
   	enable = true;
+	systemdTarget = "hyprland-session.target";
   };
 
 

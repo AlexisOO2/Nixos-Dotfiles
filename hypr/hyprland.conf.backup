@@ -47,6 +47,7 @@ $browser = firefox
  exec-once = systemctl
  exec-once = clipse -listen 
  exec-once = nm-applet 
+ exec-once = blueman-applet
  exec-once = waybar  
  exec-once = hyprpaper 
  exec-once = syncthing
@@ -322,4 +323,3 @@ windowrulev2 = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinn
 #clipse window
 windowrulev2 = float,class:(clipse) # ensure you have a floating window class set if you want this behavior
 windowrulev2 = size 622 652,class:(clipse) # set the size of the window as necessary
-

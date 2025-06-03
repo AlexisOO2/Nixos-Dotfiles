@@ -33,7 +33,7 @@
 		"sha256-2Fd0OVSCgFZVLRAVo/MxgHp1qK5WUNhKY685XPYrBmk="
 		"bibata-cursors";
 
-
+  wayland.systemd.target = "hyprland-session.target";
   wayland.windowManager.hyprland = {
   	enable = true;
 	systemd.enable = true;

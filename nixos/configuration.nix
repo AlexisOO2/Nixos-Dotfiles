@@ -161,6 +161,7 @@ nixpkgs.config.permittedInsecurePackages = [
    rofi-wayland
    amdgpu_top
    clipse
+   wl-clipboard
    gamemode
    #amdvlk
    nvtopPackages.full

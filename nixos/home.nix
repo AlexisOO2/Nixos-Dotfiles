@@ -283,7 +283,7 @@
     syntaxHighlighting.enable = true;
     oh-my-zsh = {
     	enable = true;
-    	plugins = [ "git" "thefuck" "themes" ];
+    	plugins = [ "git" "thefuck" "themes" "zoxide" ];
     	theme = "robbyrussell";
     };
     shellAliases = {

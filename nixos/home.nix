@@ -47,7 +47,6 @@
 		"$browser" = "firefox";
 		exec-once = [
 			"systemctl"
-			"clipse -listen"
 			"nm-applet"
 			"waybar"  
 			"hyprpaper" 
@@ -180,7 +179,6 @@
 			"$mainMod, L, exec, hyprlock"
 			"$mainMod, R, exec, rofi -show run"
 			"$mainMod, O, exec, obsidian"
-			"$mainMod, V, exec,  $terminal --class clipse -e 'clipse'"
 			"$mainMod, Return, fullscreen"
 			"$mainMod, A, pin"
 			"$mainMod, S, exec, hyprshot -z -m region -o ~/Pictures/Screenshots/"
@@ -254,15 +252,8 @@
 		windowrulev2 = [
 			"suppressevent maximize, class:.*"
 			"nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
-			"float,class:(clipse)"
-			"size 622 652,class:(clipse)"
 		];
 	};
-  };
-
-  services.clipse = {
-  	enable = true;
-	systemdTarget = "hyprland-session.target";
   };
 
 

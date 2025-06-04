@@ -242,6 +242,7 @@ nixpkgs.config.permittedInsecurePackages = [
    zoxide
    hyprcursor
    bibata-cursors
+   virt-viewer
 ];
  
   fonts.packages = with pkgs; [

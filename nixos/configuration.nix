@@ -251,7 +251,7 @@ nixpkgs.config.permittedInsecurePackages = [
    swaynotificationcenter
    sddm-astronaut
    qt5Full
-   libsForQt5.sddm-kcm
+   python313Packages.pyqt6
 ];
  
   fonts.packages = with pkgs; [

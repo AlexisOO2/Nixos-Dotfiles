@@ -38,8 +38,8 @@
     };
 
     cava= {
-        framerate= 30;
-        sensitivity= 10;
+        framerate = 30;
+        autosens = 1;
         bars= 14;
         lower_cutoff_freq= 10;
         higher_cutoff_freq= 10000;

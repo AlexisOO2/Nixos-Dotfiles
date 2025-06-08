@@ -47,7 +47,7 @@
 	    control-center-layer = "top";
 	    layer-shell = true;
 	    cssPriority = "application";
-	    control-center-margin-top = 0;
+	    control-center-margin-top = 10;
 	    control-center-margin-bottom = 0;
 	    control-center-margin-right = 0;
 	    control-center-margin-left = 0;

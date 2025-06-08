@@ -2,6 +2,22 @@
 {
   programs.yazi = {
   	enable = true;
+	initLua = ''
+		require("starship"):setup()
+		require("git"):setup()
+		require("full-border"):setup()
+	'';
+	settings = {
+		plugin = {
+		      prepend_fetchers = [
+		      	#{id = "git"; name = "*"; run = "git";}
+			#{id = "git"; name = "*/"; run = "git";}
+		      ];
+		      prepend_previewers = [
+		        #{name = "*.md"; run = "glow";}
+		      ];
+		};
+	};
 	theme = {
 	  flavor = {
 		dark = "catppuccin-macchiato";

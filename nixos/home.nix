@@ -175,7 +175,7 @@
 			"ALT, T, exec, $terminal"
 			"$mainMod, Q, killactive,"
 			"$mainMod, M, exit,"
-			"$mainMod, E, exec, $fileManager"
+			"$mainMod, E, exec, $terminal -e $fileManager"
 			"$mainMod, F, togglefloating,"
 			"$mainMod, D, exec, $menu"
 			"$mainMod, P, pseudo," # dwindle

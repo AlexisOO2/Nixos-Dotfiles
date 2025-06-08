@@ -52,6 +52,8 @@
 		"$browser" = "firefox";
 		exec-once = [
 			"systemctl"
+			"swaync"
+			"blueman-applet"
 			"clipse -listen"
 			"nm-applet"
 			"waybar"  
@@ -190,7 +192,8 @@
 			"$mainMod, A, pin"
 			"$mainMod, S, exec, hyprshot -z -m region -o ~/Pictures/Screenshots/"
 			"$mainMod SHIFT, S, exec, hyprshot -z -m output -o ~/Pictures/Screenshots/"
-
+			"$mainMod, N, exec swaync-client -t -sw"
+			
 			"$mainMod, left, movefocus, l"
 			"$mainMod, right, movefocus, r"
 			"$mainMod, up, movefocus, u"

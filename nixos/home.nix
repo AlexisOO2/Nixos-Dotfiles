@@ -41,8 +41,8 @@
   services.swaync = {
     enable = true;
     settings = {
-	    positionX = "left";
-	    positionY = "top";
+	    positionX = "center";
+	    positionY = "center";
 	    layer = "overlay";
 	    control-center-layer = "top";
 	    layer-shell = true;

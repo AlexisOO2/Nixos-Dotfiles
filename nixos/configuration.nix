@@ -41,6 +41,8 @@ in
 	displayManager.sddm ={
 		enable = true;
 		wayland.enable = true;
+		package = pkgs.kdePackages.sddm;
+		extraPackages = [ pkgs.sddm-astronaut ];
 		theme = "sddm-astronaut-theme";
 		#settings = {
 		  
@@ -206,7 +208,7 @@ nixpkgs.config.permittedInsecurePackages = [
    tldr
    shotcut
    haruna 
-   libsForQt5.full
+   kdePackages.qtbase
    unzip
    kissat
    xwallpaper

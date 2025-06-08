@@ -41,6 +41,7 @@ in
 		enable = true;
 		wayland.enable = true;
 		package = pkgs.plasma5Packages.sddm;
+		theme = "sddm-astronaut";
 	};
 	displayManager.sessionCommands = ''
 		xwallpaper --zoom ~/Pictures/Wallpapers/animeskull.png

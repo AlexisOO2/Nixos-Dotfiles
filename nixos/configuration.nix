@@ -44,9 +44,11 @@ in
 		package = pkgs.kdePackages.sddm;
 		extraPackages = [ pkgs.sddm-astronaut ];
 		theme = "sddm-astronaut-theme";
-		#settings = {
-		  
-		#};
+		settings = {
+			SddmGreeterTheme = {
+				ConfigFile = "Themes/cyberpunk.conf";
+			};  
+		};
 	};
 	displayManager.sessionCommands = ''
 		xwallpaper --zoom ~/Pictures/Wallpapers/animeskull.png

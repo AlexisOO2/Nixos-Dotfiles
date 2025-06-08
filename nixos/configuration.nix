@@ -42,6 +42,7 @@ in
 		enable = true;
 		wayland.enable = true;
 		package = pkgs.kdePackages.sddm;
+		extraPackages = [pkgs.sddm-astronaut];
 		theme = "sddm-astronaut-theme";
 	};
 	displayManager.sessionCommands = ''
@@ -248,8 +249,6 @@ nixpkgs.config.permittedInsecurePackages = [
    kdePackages.okular
    swaynotificationcenter
    sddm-astronaut
-   qt5Full
-   python313Packages.pyqt6
 ];
  
   fonts.packages = with pkgs; [

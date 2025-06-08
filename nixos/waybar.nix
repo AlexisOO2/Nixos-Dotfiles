@@ -258,6 +258,8 @@ window#waybar.hidden {
 }
 
 #custom-weather {
+    padding-right: 16px;
+    border-radius: 0px 10px 10px 0px;
     transition: none;
     color: #ffffff;
     background: #383c4a;
@@ -363,6 +365,11 @@ window#waybar.hidden {
 }
 
 #custom-notification {
+    margin-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
+    transition: none;
     color: #ffffff;
     background: #383c4a;
 }

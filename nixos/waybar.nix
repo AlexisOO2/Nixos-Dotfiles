@@ -365,7 +365,6 @@ window#waybar.hidden {
 }
 
 #custom-notification {
-    margin-right: 8px;
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 10px;

@@ -4,8 +4,8 @@
   	enable = true;
 	theme = {
 	  flavor = {
-		dark = "cattpuccin-macchiato";
-		light = "carrpuccin-macchiato";
+		dark = "catppuccin-macchiato";
+		light = "cattppuccin-macchiato";
 	  };
 
 	};

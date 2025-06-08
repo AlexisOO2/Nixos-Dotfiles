@@ -364,6 +364,16 @@ window#waybar.hidden {
     animation-direction: alternate;
 }
 
+#custom-notification {
+    margin-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
+    transition: none;
+    color: #ffffff;
+    background: #383c4a;
+}
+
 #tray {
     padding-left: 16px;
     padding-right: 16px;

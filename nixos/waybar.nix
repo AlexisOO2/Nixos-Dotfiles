@@ -258,7 +258,6 @@ window#waybar.hidden {
 }
 
 #custom-weather {
-    padding-right: 16px;
     border-radius: 0px 10px 10px 0px;
     transition: none;
     color: #ffffff;

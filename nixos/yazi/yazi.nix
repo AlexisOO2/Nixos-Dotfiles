@@ -17,6 +17,12 @@
 		        #{name = "*.md"; run = "glow";}
 		      ];
 		};
+		opener = {
+			play = [
+			  {mime = "video/*"; use = "haruna";}
+			];
+
+		};
 	};
 	theme = {
 	  flavor = {

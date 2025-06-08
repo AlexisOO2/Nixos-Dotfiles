@@ -19,7 +19,7 @@
 	};
 	
 	flavors = {
-	   cat = ./catppuccin-macchiato.yazi;
+	   catppuccin-macchiato = ./catppuccin-macchiato.yazi;
 	};
   };
 }

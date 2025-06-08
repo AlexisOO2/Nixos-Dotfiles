@@ -56,6 +56,7 @@
 	    notification-icon-size = 64;
 	    notification-body-image-height = 120;
 	    notification-body-image-width = 200;
+	    fit-to-screen = false;
 	};
   };
 

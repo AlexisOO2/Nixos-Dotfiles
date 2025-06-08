@@ -39,7 +39,7 @@
 
     cava= {
         framerate= 30;
-        sensitivity= 50;
+        sensitivity= 10;
         bars= 14;
         lower_cutoff_freq= 10;
         higher_cutoff_freq= 10000;

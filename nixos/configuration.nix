@@ -5,7 +5,6 @@
 { config, lib, pkgs, ... }:
 let
   home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz";
-  embeddedTheme = "cyberpunk";
 in
 {
   imports =
@@ -43,7 +42,6 @@ in
 		enable = true;
 		wayland.enable = true;
 		package = pkgs.kdePackages.sddm;
-		extraPackages = [ pkgs.sddm-astronaut ];
 		theme = "sddm-astronaut-theme";
 	};
 	displayManager.sessionCommands = ''

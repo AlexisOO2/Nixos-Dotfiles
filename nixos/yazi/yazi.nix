@@ -19,7 +19,7 @@
 		};
 		open = {
 			rules = [
-			  {mime = "video/*"; use = "haruna";}
+			  {mime = "video/*"; use = "play";}
 			];
 
 		};

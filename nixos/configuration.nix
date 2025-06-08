@@ -216,7 +216,6 @@ nixpkgs.config.permittedInsecurePackages = [
    godot_4
    androidStudioPackages.dev
    xfce.thunar
-   dunst
    hyprpaper
    waybar
    networkmanagerapplet
@@ -245,6 +244,7 @@ nixpkgs.config.permittedInsecurePackages = [
    rofi-network-manager
    ueberzugpp
    kdePackages.okular
+   swaynotificationcenter
 ];
  
   fonts.packages = with pkgs; [

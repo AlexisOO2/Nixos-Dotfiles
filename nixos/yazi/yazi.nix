@@ -18,16 +18,16 @@
 		      ];
 		};
 		open = {
-			rules = [
-			  {mime = "video/*"; use = "play";}
-			];
+		#	rules = [
+		#	  {mime = "video/*"; use = "play";}
+		#	];
 
 		};
 
 		opener = {
-			play = [
-			  {run = '''haruna' "$@"''; orphan = true; for = "unix";}
-			];
+		#	play = [
+		#	  {run = '''haruna' "$@"''; orphan = true; for = "unix";}
+		#	];
 		};
 	};
 	theme = {

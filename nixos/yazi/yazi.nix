@@ -2,6 +2,13 @@
 {
   programs.yazi = {
   	enable = true;
+	theme = {
+	  flavor = {
+		dark = "cattpuccin-macchiato";
+		light = "carrpuccin-macchiato";
+	  };
+
+	};
 	plugins = {
 	   git = pkgs.yaziPlugins.git;
 	   sudo = pkgs.yaziPlugins.sudo;

@@ -44,7 +44,7 @@
 	    positionX = "right";
 	    positionY = "bottom";
 	    layer = "overlay";
-	    control-center-layer = "bottom";
+	    control-center-layer = "top";
 	    layer-shell = true;
 	    cssPriority = "application";
 	    control-center-margin-top = 20;

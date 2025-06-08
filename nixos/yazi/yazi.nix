@@ -26,7 +26,7 @@
 
 		opener = {
 			play = [
-			  {run = "haruna"; orphan = true; for = "unix";}
+			  {run = '''haruna' "$@"''; orphan = true; for = "unix";}
 			];
 		};
 	};

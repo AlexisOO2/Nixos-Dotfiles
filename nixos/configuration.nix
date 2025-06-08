@@ -34,6 +34,7 @@ in
   boot.loader.efi.canTouchEfiVariables = true;
   #boot.initrd.kernelModules = [ "amdgpu" ];
 	
+
   services.xserver = {
   	enable = true;
   	windowManager.qtile.enable = true;
@@ -250,6 +251,7 @@ nixpkgs.config.permittedInsecurePackages = [
    swaynotificationcenter
    sddm-astronaut
    qt5Full
+   libsForQt5.sddm-kcm
 ];
  
   fonts.packages = with pkgs; [

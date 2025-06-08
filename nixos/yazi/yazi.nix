@@ -17,11 +17,17 @@
 		        #{name = "*.md"; run = "glow";}
 		      ];
 		};
-		opener = {
-			play = [
+		open = {
+			rules = [
 			  {mime = "video/*"; use = "haruna";}
 			];
 
+		};
+
+		opener = {
+			play = [
+			  {run = "haruna"; orphan = true; for = "unix";}
+			];
 		};
 	};
 	theme = {

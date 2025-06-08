@@ -47,7 +47,7 @@
 	settings = {
 		"monitor" = ",preferred,auto,auto";
 		"$terminal" = "alacritty";
-		"$fileManager" = "thunar";
+		"$fileManager" = "yazi";
 		"$menu" = "rofi -show drun -show-icons";
 		"$browser" = "firefox";
 		exec-once = [

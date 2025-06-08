@@ -40,7 +40,10 @@ in
 	displayManager.sddm ={
 		enable = true;
 		wayland.enable = true;
-		theme = "sddm-astronaut";
+		theme = "sddm-astronaut-theme";
+		#settings = {
+		  
+		#};
 	};
 	displayManager.sessionCommands = ''
 		xwallpaper --zoom ~/Pictures/Wallpapers/animeskull.png

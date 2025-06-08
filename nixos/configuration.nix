@@ -244,6 +244,7 @@ nixpkgs.config.permittedInsecurePackages = [
    bibata-cursors
    virt-viewer
    rofi-network-manager
+   ueberzugpp
 ];
  
   fonts.packages = with pkgs; [

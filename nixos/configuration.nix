@@ -154,7 +154,6 @@ nixpkgs.config.permittedInsecurePackages = [
    alacritty
    btop
    gedit
-   brave
    syncthing
    otpclient
    gcc
@@ -245,6 +244,7 @@ nixpkgs.config.permittedInsecurePackages = [
    virt-viewer
    rofi-network-manager
    ueberzugpp
+   kdePackages.okular
 ];
  
   fonts.packages = with pkgs; [

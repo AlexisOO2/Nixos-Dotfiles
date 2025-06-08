@@ -364,8 +364,6 @@ window#waybar.hidden {
 }
 
 #custom-notification {
-    padding-left: 16px;
-    padding-right: 16px;
     color: #ffffff;
     background: #383c4a;
 }

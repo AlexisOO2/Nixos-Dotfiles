@@ -106,7 +106,26 @@
         format-icons = [""];
         min-length = 7;
     };
-
+	"custom/notification" = {
+	    tooltip = false;
+	    format = "{} {icon}";
+	    format-icons = {
+	      notification = "<span foreground='red'><sup></sup></span>";
+	      none = "";
+	      dnd-notification = "<span foreground='red'><sup></sup></span>";
+	      dnd-none = "";
+	      inhibited-notification = "<span foreground='red'><sup></sup></span>";
+	      inhibited-none = "";
+	      dnd-inhibited-notification = "<span foreground='red'><sup></sup></span>";
+	      dnd-inhibited-none = "";
+	    };
+	    return-type = "json";
+	    exec-if = "which swaync-client";
+	    exec = "swaync-client -swb";
+	    on-click =  "swaync-client -t -sw";
+	    on-click-right = "swaync-client -d -sw";
+	    escape = true;
+	};
     battery = {
         states = {
             warning = 30;
@@ -342,6 +361,16 @@ window#waybar.hidden {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+#custom-notification {
+    margin-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
+    transition: none;
+    color: #ffffff;
+    background: #383c4a;
 }
 
 #tray {

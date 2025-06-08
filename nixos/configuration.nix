@@ -249,6 +249,7 @@ nixpkgs.config.permittedInsecurePackages = [
    kdePackages.okular
    swaynotificationcenter
    sddm-astronaut
+   qt5Full
 ];
  
   fonts.packages = with pkgs; [

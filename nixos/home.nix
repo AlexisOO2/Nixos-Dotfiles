@@ -112,7 +112,7 @@
 		};
 
 		decoration = {
-			rounding = 5;
+			rounding = 10;
 
 			# Change transparency of focused and unfocused windows
 			active_opacity = "1.0";

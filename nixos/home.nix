@@ -94,7 +94,7 @@
 		];
 		general = {
 		    gaps_in = 5;
-		    gaps_out = 20;
+		    gaps_out = 10;
 
 		    border_size = 2;
 
@@ -116,7 +116,7 @@
 
 			# Change transparency of focused and unfocused windows
 			active_opacity = "1.0";
-			inactive_opacity = "1.0";
+			inactive_opacity = "0.95";
 
 		    	shadow = {
 				enabled = false;
@@ -186,7 +186,7 @@
 			sensitivity = 0; # -1.0 - 1.0, 0 means no modification.
 
 			touchpad = {
-				natural_scroll = false;
+				natural_scroll = true;
 		    	};
 		};
 		

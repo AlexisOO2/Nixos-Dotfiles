@@ -70,18 +70,7 @@
 
 	settings = {
 		plugin = {
-		    borders-plus-plus = {
-			add_borders = 0; # 0 - 9
-
-			# you can add up to 9 borders
-			"col.border_0" = "rgb(ffffff)";
-
-			# -1 means "default" as in the one defined in general:border_size
-			border_size_0 = "2";
-
-			# makes outer edges match rounding of the parent. Turn on / off to better understand. Default = on.
-			natural_rounding = "yes";
-    			};		
+		
 		};
 		
 		"monitor" = ",preferred,auto,auto";
@@ -110,7 +99,7 @@
 		    border_size = 2;
 
 		    # https://wiki.hyprland.org/Configuring/Variables/#variable-types for info about colors
-		    "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
+		    "col.active_border" = "rgba(ffffffff) 90deg";
 		    "col.inactive_border" = "rgba(595959aa)";
 
 		    # Set to true enable resizing windows by clicking and dragging on borders and gaps

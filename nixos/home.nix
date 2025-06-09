@@ -93,7 +93,7 @@
 			"HYPRCURSOR_SIZE,24"
 		];
 		general = {
-		    gaps_in = 0;
+		    gaps_in = 2;
 		    gaps_out = 20;
 
 		    border_size = 2;

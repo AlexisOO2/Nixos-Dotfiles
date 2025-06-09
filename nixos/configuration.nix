@@ -249,8 +249,9 @@ nixpkgs.config.permittedInsecurePackages = [
    kdePackages.okular
    swaynotificationcenter
    (sddm-astronaut.override {
-   	embeddedTheme = "cyberpunk";
+   	embeddedTheme = "pixel_sakura";
    })
+   lazygit
 ];
  
   fonts.packages = with pkgs; [

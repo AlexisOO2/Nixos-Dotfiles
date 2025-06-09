@@ -66,7 +66,7 @@
 	systemd.enable = true;
 	xwayland.enable = true;
 	systemd.variables = ["--all"];
-	plugins = [pkgs.hyprlandPlugins.borders-plus-plus];
+	plugins = [];
 
 	settings = {
 		plugin = {

@@ -362,6 +362,7 @@
     enable = true;
     font = "0xProto";
     terminal = "alacritty";
+    theme = "material by Tomaszal";
   };
 
 

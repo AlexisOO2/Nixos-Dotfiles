@@ -25,6 +25,13 @@
       git push origin main 
       cd 
       '';
+      upb = ''
+      sudo cd ~/nixos-dotfiles
+      git pull origin main
+      sudo cp -r /nixos/modules/* /etc/nixos/modules
+      sudo cp /nixos/packages.nix /etc/nixos
+      sudo cp /nixos/home.nix /etc/nixos
+      '';
     };
   };
 }

@@ -13,7 +13,7 @@
 		
 		};
 		
-		"monitor" = ",preferred,auto,auto";
+		"monitor" = ",highres,auto,1";
 		"$terminal" = "alacritty";
 		"$fileManager" = "yazi";
 		"$menu" = "rofi -show drun -show-icons";

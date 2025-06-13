@@ -28,9 +28,9 @@
       upb = ''
       cd ~/nixos-dotfiles
       git pull origin main
-      sudo cp -r /nixos/modules /etc/nixos/
-      sudo cp /nixos/packages.nix /etc/nixos
-      sudo cp /nixos/home.nix /etc/nixos
+      sudo cp -r ./nixos/modules/ /etc/nixos/
+      sudo cp ./nixos/packages.nix /etc/nixos
+      sudo cp ./nixos/home.nix /etc/nixos
       cd
       '';
     };

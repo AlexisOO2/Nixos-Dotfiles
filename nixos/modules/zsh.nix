@@ -1,0 +1,33 @@
+{config,pkgs,...}:
+{
+  programs.zsh = {
+    enable = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+    oh-my-zsh = {
+    	enable = true;
+    	plugins = [ "git" "thefuck" "themes" "zoxide" ];
+    	theme = "robbyrussell";
+    };
+    sessionVariables = {
+      EDITOR = "nvim";
+    };
+    shellAliases = {
+      ls = "eza -l --git --no-permissions --no-user --no-filesize --icons --colour=always --git --git-repos";
+      lsa = "eza --all --icons --colour=always --git --git-repos -l";
+      cat = "bat";
+      nrs = ''
+      sudo nixos-rebuild switch &&
+      sudo cp -r /etc/nixos/ ~/nixos-dotfiles &&
+      sudo cp -r .config/alacritty ~/nixos-dotfiles &&
+      sudo cp -r .config/qtile ~/nixos-dotfiles &&
+      sudo cp -r .config/hypr ~/nixos-dotfiles
+      cd ~/nixos-dotfiles
+      git add .
+      git commit -m "New Version $(date)"
+      git push origin main 
+      cd 
+      '';
+    };
+  };
+}

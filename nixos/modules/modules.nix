@@ -11,7 +11,8 @@
 	./swaync.nix
 	./tmux.nix
 	./yazi.nix
-	./zsh.nix  
+	./zsh.nix
+	./waybar.nix
   ];
 
 }

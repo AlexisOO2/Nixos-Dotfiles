@@ -18,7 +18,9 @@
       cat = "bat";
       nrs = ''
       sudo nixos-rebuild switch &&
-      sudo cp -r /etc/nixos/ ~/nixos-dotfiles &&
+      sudo cp -r /etc/nixos/packages.nix ~/nixos-dotfiles &&
+      sudo cp -r /etc/nixos/home.nix ~/nixos-dotfiles &&
+      sudo cp -r /etc/nixos/modules ~/nixos-dotfiles &&
       cd ~/nixos-dotfiles
       git add .
       git commit -m "New Version $(date)"

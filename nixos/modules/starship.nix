@@ -35,11 +35,11 @@
       git_branch = {
 	symbol = "";
 	style = "bg:#394260";
-	format = '''[[ $symbol $branch ](fg:#769ff0 bg:#394260)]($style)' '';	
+	format = "[[ $symbol $branch ](fg:#769ff0 bg:#394260)]($style)";	
       };
       git_status = {
 	style = "bg:#394260";
-	format = '''[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)' '';
+	format = "[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)";
       };
       time = {
       disabled = false;

@@ -3,7 +3,7 @@
 programs.alacritty = {
     enable = true;
     settings = {
-      window.opacity = -1.9;
+      window.opacity = 0.9;
       font.normal = {
         family = "0xProto";
         style = "Regular";

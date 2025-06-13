@@ -8,7 +8,7 @@ programs.alacritty = {
         family = "0xProto";
         style = "Regular";
       };
-      font.size = 10;
+      font.size = 11;
     };
   };
 }

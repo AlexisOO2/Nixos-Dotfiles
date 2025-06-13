@@ -5,8 +5,9 @@
 
   imports = [
 	    ./waybar.nix
-  ./yazi/yazi.nix
-  ];
+   ./yazi/yazi.nix
+   ./tmux/tmux.nix 
+ ];
   home.username = "aiden";
   home.homeDirectory = "/home/aiden";
   home.stateVersion = "25.05"; 

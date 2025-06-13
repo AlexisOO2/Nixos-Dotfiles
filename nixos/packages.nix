@@ -98,6 +98,8 @@
    bibata-cursors
    virt-viewer
    rofi-network-manager
+   asusctl
+   supergfxctl
    ueberzugpp
    kdePackages.okular
    swaynotificationcenter
@@ -108,6 +110,6 @@
 ];
  
   fonts.packages = with pkgs; [
-  	_0xproto
+      nerd-fonts._0xproto
   ];
 }

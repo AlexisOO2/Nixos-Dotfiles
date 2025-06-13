@@ -61,12 +61,6 @@ in
     xwayland.enable = true;
   };
 
-  services.picom = {
-  	enable = true;
-  	backend = "glx";
-	fade = true;
-  };
-
   programs.zsh.enable = true;
   
   services.gvfs.enable = true;
@@ -97,8 +91,6 @@ in
 
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
-
-
 
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot

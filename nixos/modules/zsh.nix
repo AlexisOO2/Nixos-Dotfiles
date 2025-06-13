@@ -31,7 +31,7 @@
       sudo cp -r ./nixos/modules/ /etc/nixos/
       sudo cp ./nixos/packages.nix /etc/nixos
       sudo cp ./nixos/home.nix /etc/nixos
-      sudo nixos rebuild switch
+      sudo nixos-rebuild switch
       cd
       '';
     };

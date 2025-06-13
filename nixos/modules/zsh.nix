@@ -19,9 +19,6 @@
       nrs = ''
       sudo nixos-rebuild switch &&
       sudo cp -r /etc/nixos/ ~/nixos-dotfiles &&
-      sudo cp -r .config/alacritty ~/nixos-dotfiles &&
-      sudo cp -r .config/qtile ~/nixos-dotfiles &&
-      sudo cp -r .config/hypr ~/nixos-dotfiles
       cd ~/nixos-dotfiles
       git add .
       git commit -m "New Version $(date)"

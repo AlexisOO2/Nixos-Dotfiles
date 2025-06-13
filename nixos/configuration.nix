@@ -33,18 +33,19 @@ in
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   #boot.initrd.kernelModules = [ "amdgpu" ];
-	
+
+
+  services.displayManager.sddm = {
+	enable = true;
+	wayland.enable = true;
+	package = pkgs.kdePackages.sddm;
+	extraPackages = [pkgs.sddm-astronaut];
+	theme = "sddm-astronaut-theme";
+  };	
 
   services.xserver = {
   	enable = true;
   	windowManager.qtile.enable = true;
-	displayManager.sddm ={
-		enable = true;
-		wayland.enable = true;
-		package = pkgs.kdePackages.sddm;
-		extraPackages = [pkgs.sddm-astronaut];
-		theme = "sddm-astronaut-theme";
-	};
 	displayManager.sessionCommands = ''
 		xwallpaper --zoom ~/Pictures/Wallpapers/animeskull.png
 		xset r rate 200 35 &

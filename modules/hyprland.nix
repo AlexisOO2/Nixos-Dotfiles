@@ -99,8 +99,8 @@
 				"layersOut, 1, 1.5, linear, fade"
 				"fadeLayersIn, 1, 1.79, almostLinear"
 				"fadeLayersOut, 1, 1.39, almostLinear"
-				"workspaces, 1, 8, easeInOutSine, slide"
-				"workspacesIn, 1, 1.21, easeInOutSine, slide"
+				"workspaces, 1, 1.94, easeInOutSine, slide"
+				"workspacesIn, 1, 3, easeInOutSine, slide"
 				"workspacesOut, 1, 1.94, easeInOutSine, slide"
 				"specialWorkspace, 1, 1.94, easeInOutSine, slidevert"
 			];

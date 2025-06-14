@@ -101,7 +101,7 @@
 				"workspaces, 1, 1.94, easeInOutCubic, slide"
 				"workspacesIn, 1, 1.21, easeInOutCubic, slide"
 				"workspacesOut, 1, 1.94, easeInOutCubic, slide"
-				"specialworkspace, 1, 1.94, easeInOutCubic, slidevert"
+				"specialWorkspace, 1, 1.94, easeInOutCubic, slidevert"
 			];
 		};
 		dwindle = {

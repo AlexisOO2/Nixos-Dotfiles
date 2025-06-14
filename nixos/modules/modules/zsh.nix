@@ -30,7 +30,7 @@
       upb = ''
       cd ~/nixos-dotfiles
       git pull origin main
-      sudo cp --update=all nixos/modules/* /etc/nixos/module/s
+      sudo cp --update=all nixos/modules/* /etc/nixos/modules
       sudo cp --update=all nixos/packages.nix /etc/nixos
       sudo cp --update=all nixos/home.nix /etc/nixos
       sudo nixos-rebuild switch

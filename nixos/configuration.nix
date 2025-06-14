@@ -13,7 +13,44 @@ in
       ./packages.nix
       (import "${home-manager}/nixos")
     ];
+  powerManagement.enable = true;  
+
+  services.logind = {
+	lidSwitch = "suspend";
+        lidSwitchExternalPower = "lock";
+        lidSwitchDocked = "ignore";
+  };
+
+ 
+  hardware.graphics.enable = true;
+  services.supergfxd.enable = true;
+  services.asusd = {
+    enable = true;
+    enableUserService = true; 
+  };  
   
+  hardware = {
+	opengl.enable=true;
+	nvidia = {
+	    modesetting.enable = true;
+	    powerManagement.enable = false;
+	    powerManagement.finegrained = false;
+	    open = false;
+	    nvidiaSettings = true;
+	    package = config.boot.kernelPackages.nvidiaPackages.stable;
+	    prime = {
+		intelBusId = "PCI:05:00.0";
+		nvidiaBusId = "PCI:01:00.0";
+	    };
+	};
+  };
+
+  environment.sessionVariables = {
+  	WR_NO_HARDWARE_CURSORS = "1";
+	NIXOS_OZONE_WL = "1";
+  };
+
+
   system.autoUpgrade.enable = true;
   system.autoUpgrade.dates = "weekly";
 
@@ -36,30 +73,26 @@ in
   #boot.initrd.kernelModules = [ "amdgpu" ];
 
 
-  services.displayManager.sddm = {
+  services.displayManager.sddm ={
 	enable = true;
 	wayland.enable = true;
 	package = pkgs.kdePackages.sddm;
 	extraPackages = [pkgs.sddm-astronaut];
 	theme = "sddm-astronaut-theme";
-  };	
-
+  };
+	
   services.xserver = {
   	enable = true;
-  	windowManager.qtile.enable = true;
-	displayManager.sessionCommands = ''
-		xwallpaper --zoom ~/Pictures/Wallpapers/animeskull.png
-		xset r rate 200 35 &
-	'';
-  	#videoDrivers = [ "amdgpu" ];
+	windowManager.qtile.enable = true;
+  	videoDrivers = [ "nvidia" ];
   	xkb.layout = "es";
-
   };
 
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
   };
+
 
   programs.zsh.enable = true;
   
@@ -92,8 +125,10 @@ in
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
 
+
+
   hardware.bluetooth.enable = true; # enables support for Bluetooth
-  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+  hardware.bluetooth.powerOnBoot = false; # powers up the default Bluetooth controller on boot
 
   services.blueman.enable = true;
   boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
@@ -140,7 +175,6 @@ nixpkgs.config.permittedInsecurePackages = [
               ];
 
  nixpkgs.config.allowUnfree = true; 
-
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

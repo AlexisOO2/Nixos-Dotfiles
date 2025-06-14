@@ -83,6 +83,7 @@
 				"linear,0,0,1,1"
 				"almostLinear,0.5,0.5,0.75,1.0"
 				"quick,0.15,0,0.1,1"
+				"easeInOutSine, 0.445, 0.05, 0.55, 0.95"
 			];
 			animation = [
 				"global, 1, 10, default"
@@ -98,10 +99,10 @@
 				"layersOut, 1, 1.5, linear, fade"
 				"fadeLayersIn, 1, 1.79, almostLinear"
 				"fadeLayersOut, 1, 1.39, almostLinear"
-				"workspaces, 1, 1.94, easeInOutCubic, slide"
-				"workspacesIn, 1, 1.21, easeInOutCubic, slide"
-				"workspacesOut, 1, 1.94, easeInOutCubic, slide"
-				"specialWorkspace, 1, 1.94, easeInOutCubic, slidevert"
+				"workspaces, 1, 1.94, easeInOutSine, slide"
+				"workspacesIn, 1, 1.21, easeInOutSine, slide"
+				"workspacesOut, 1, 1.94, easeInOutSine, slide"
+				"specialWorkspace, 1, 1.94, easeInOutSine, slidevert"
 			];
 		};
 		dwindle = {

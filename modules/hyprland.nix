@@ -102,7 +102,7 @@
 				"workspaces, 1, 1.94, easeInOutSine, slide"
 				"workspacesIn, 1, 1.21, easeInOutSine, slide"
 				"workspacesOut, 1, 1.94, easeInOutSine, slide"
-				"specialWorkspace, 1, 1.94, easeInOutSine, slide top"
+				"specialWorkspace, 1, 1.94, easeInOutSine, slide"
 			];
 		};
 		dwindle = {

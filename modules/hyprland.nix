@@ -100,9 +100,9 @@
 				"fadeLayersIn, 1, 1.79, almostLinear"
 				"fadeLayersOut, 1, 1.39, almostLinear"
 				"workspaces, 1, 1.94, easeInOutSine, slide"
-				"workspacesIn, 1, 3, easeInOutSine, slide"
-				"workspacesOut, 1, 1.94, easeInOutSine, slide"
-				"specialWorkspace, 1, 1.94, easeInOutSine, slidevert"
+				"workspacesIn, 1, 2.5, easeInOutSine, slide"
+				"workspacesOut, 1, 2.5, easeInOutSine, slide"
+				"specialWorkspace, 1, 2.5, easeInOutSine, slidevert"
 			];
 		};
 		dwindle = {

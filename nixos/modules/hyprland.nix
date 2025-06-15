@@ -27,6 +27,7 @@
 			"waybar"  
 			"hyprpaper" 
 			"syncthing"
+      "swayosd-server"
 		];
 		env = [
 		 	"XCURSOR_SIZE,24"

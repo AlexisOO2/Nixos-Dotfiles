@@ -107,6 +107,7 @@
    	embeddedTheme = "pixel_sakura";
    })
    lazygit
+   swayosd
 ];
  
   fonts.packages = with pkgs; [

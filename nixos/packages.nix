@@ -107,6 +107,9 @@
    	embeddedTheme = "pixel_sakura";
    })
    lazygit
+   retroarch
+   #ryujinx
+   #dolphin-emu
 ];
  
   fonts.packages = with pkgs; [

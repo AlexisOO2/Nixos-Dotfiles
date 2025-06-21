@@ -132,7 +132,7 @@
    gtksourceview
    libsoup_3
    python313Packages.gpustat
-   power-profiles-daemon
+   #power-profiles-daemon
    grimblast
    wf-recorder
    hyprsunset

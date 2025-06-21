@@ -114,7 +114,6 @@
    libretro.citra
    rpcs3
    swayosd
-   brightnessctl
 ];
  
   fonts.packages = with pkgs; [

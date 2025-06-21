@@ -213,12 +213,12 @@
 		];
 
 		bindel = [
-			",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
-			",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-			",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-			",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-			",XF86MonBrightnessUp, exec, brightnessctl s 10%+"
-			",XF86MonBrightnessDown, exec, brightnessctl s 10%-"
+			",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ exec swayosd-client --output-volume raise"
+			",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- exec swayosd-client --output-volume lower"
+			",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle exec swayosd-client --output-volume mute-toggle"
+			",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle exec swayosd-client --input-volume mute-toggle"
+			",XF86MonBrightnessUp, exec, brightnessctl s 10%+ exec swayosd-client --brightness raise"
+			",XF86MonBrightnessDown, exec, brightnessctl s 10%- exec swayosd-client --brightness lower"
 		];
 
 		bindl = [

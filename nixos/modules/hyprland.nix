@@ -20,7 +20,6 @@
 		"$browser" = "firefox";
 		exec-once = [
 			"systemctl"
-			"swaync"
 			"blueman-applet"
 			"clipse -listen"
 			"nm-applet"  

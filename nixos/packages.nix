@@ -116,6 +116,8 @@
    swayosd
    prismlauncher
    ags
+   typescript
+   javascript-typescript-langserver
 ];
  
   fonts.packages = with pkgs; [

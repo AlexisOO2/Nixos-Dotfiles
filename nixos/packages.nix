@@ -1,4 +1,4 @@
-{config, pkgs, ...}:
+{inputs, config, pkgs, ...}:
 {
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -81,7 +81,6 @@
    zsh-syntax-highlighting
    zsh-autosuggestions
    starship
-   thefuck
    usbutils
    udiskie
    udisks
@@ -124,6 +123,8 @@
    gjs
    astal.io
    astal.gjs
+   inputs.hyprpanel.packages.${pkgs.system}.default
+   hyprpanel
 ];
  
   fonts.packages = with pkgs; [

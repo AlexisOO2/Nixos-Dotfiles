@@ -114,6 +114,7 @@
    libretro.citra
    rpcs3
    swayosd
+   prismlauncher
 ];
  
   fonts.packages = with pkgs; [

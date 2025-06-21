@@ -121,6 +121,7 @@
    gtk4
    graphene
    gtk4-layer-shell
+   astal.gjs
 ];
  
   fonts.packages = with pkgs; [

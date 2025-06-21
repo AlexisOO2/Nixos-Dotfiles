@@ -6,7 +6,7 @@
     syntaxHighlighting.enable = true;
     oh-my-zsh = {
     	enable = true;
-    	plugins = [ "git" "thefuck" "themes" "zoxide" ];
+    	plugins = [ "git" "themes" "zoxide" ];
     	theme = "robbyrussell";
     };
     sessionVariables = {
@@ -18,6 +18,7 @@
       cat = "bat";
       nrs = ''
       sudo nixos-rebuild switch &&
+      sudo cp -r /etc/nixos/flake.nix ~/nixos-dotfiles/nixos/
       sudo cp -r /etc/nixos/packages.nix ~/nixos-dotfiles/nixos/
       sudo cp -r /etc/nixos/home.nix ~/nixos-dotfiles/nixos/
       sudo cp -r /etc/nixos/modules/* ~/nixos-dotfiles/nixos/modules/
@@ -33,6 +34,7 @@
       sudo cp -r --update=all nixos/modules/* /etc/nixos/modules
       sudo cp --update=all nixos/packages.nix /etc/nixos
       sudo cp --update=all nixos/home.nix /etc/nixos
+      sudo cp --update=all nixos/flake.nix /etc/nixos
       sudo nixos-rebuild switch
       cd
       '';

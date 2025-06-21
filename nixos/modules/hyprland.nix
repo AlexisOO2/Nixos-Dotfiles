@@ -28,6 +28,7 @@
 			"hyprpaper" 
 			"syncthing"
       "swayosd-server"
+      "nix run astalflake/"
 		];
 		env = [
 		 	"XCURSOR_SIZE,24"

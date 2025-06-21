@@ -115,6 +115,15 @@
    rpcs3
    swayosd
    prismlauncher
+   ags
+   typescript
+   javascript-typescript-langserver
+   gtk4
+   graphene
+   gtk4-layer-shell
+   gjs
+   astal.io
+   astal.gjs
 ];
  
   fonts.packages = with pkgs; [

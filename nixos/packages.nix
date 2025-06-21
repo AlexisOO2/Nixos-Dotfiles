@@ -126,6 +126,18 @@
    inputs.hyprpanel.packages.${pkgs.system}.default
    hyprpanel
    pywal
+   libgtop
+   dart-sass
+   upower 
+   gtksourceview
+   libsoup_3
+   python313Packages.gpustat
+   power-profiles-daemon
+   grimblast
+   wf-recorder
+   hyprsunset
+   swww
+   matugen
 ];
  
   fonts.packages = with pkgs; [

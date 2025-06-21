@@ -6,6 +6,7 @@
 	./hyprland.nix
 	./hyprlock.nix
 	./hyprpaper.nix
+	#./hyprpanel.nix
 	./rofi.nix
 	./starship.nix
 	./tmux.nix

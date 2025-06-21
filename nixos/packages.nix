@@ -107,16 +107,12 @@
    	embeddedTheme = "pixel_sakura";
    })
    lazygit
-<<<<<<< HEAD
    retroarch
    ryujinx
    dolphin-emu
    libretro.melonds
    libretro.citra
    rpcs3
-=======
-   swayosd
->>>>>>> 812caeecc232d4af284fc97c845d5f27c59cef1c
 ];
  
   fonts.packages = with pkgs; [

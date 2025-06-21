@@ -25,7 +25,7 @@
 			"nm-applet"  
 			"hyprpaper" 
 			"syncthing"
-		        "nix run /etc/nixos/flakes/HyprPanel"
+		        "hyprpanel"
 		];
 		env = [
 		 	"XCURSOR_SIZE,24"

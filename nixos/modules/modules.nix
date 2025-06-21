@@ -14,7 +14,6 @@
 	./zsh.nix
  	./waybar.nix
 	./swayosd.nix
-	./ags.nix
   ];
 
 }

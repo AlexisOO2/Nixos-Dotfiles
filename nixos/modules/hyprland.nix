@@ -159,7 +159,6 @@
 			"$mainMod, A, pin"
 			"$mainMod, S, exec, hyprshot -z -m region -o ~/Pictures/Screenshots/"
 			"$mainMod SHIFT, S, exec, hyprshot -z -m output -o ~/Pictures/Screenshots/"
-			"$mainMod, N, exec, swaync-client -t -sw"
 			
 			"$mainMod, left, movefocus, l"
 			"$mainMod, right, movefocus, r"
@@ -208,9 +207,6 @@
 		bindm = [
 			"$mainMod, mouse:272, movewindow"
 			"$mainMod, mouse:273, resizewindow"
-		];
-		bindr = [
-			"CAPS, Caps_lock, exec, swayosd-client --caps-lock"
 		];
 		bindel = [
 			",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"

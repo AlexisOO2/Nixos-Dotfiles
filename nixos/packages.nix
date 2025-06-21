@@ -115,6 +115,7 @@
    rpcs3
    swayosd
    prismlauncher
+   ags
 ];
  
   fonts.packages = with pkgs; [

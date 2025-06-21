@@ -7,7 +7,7 @@
   home.username = "aiden";
   home.homeDirectory = "/home/aiden";
   home.stateVersion = "25.05"; 
-
+home.packages = [ inputs.ags.packages.${pkgs.system}.io ];
 home.pointerCursor = 
     let 
       getFrom = url: hash: name: {

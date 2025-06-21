@@ -120,6 +120,7 @@
    javascript-typescript-langserver
    gtk4
    graphene
+   gtk4-layer-shell
 ];
  
   fonts.packages = with pkgs; [

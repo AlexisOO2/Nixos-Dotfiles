@@ -12,7 +12,8 @@
 	./tmux.nix
 	./yazi.nix
 	./zsh.nix
-	./waybar.nix
+ 	./waybar.nix
+	./swayosd.nix
   ];
 
 }

@@ -25,7 +25,6 @@
 			"nm-applet"  
 			"hyprpaper" 
 			"syncthing"
-		        "swayosd-server"
 		        "nix run /etc/nixos/flakes/HyprPanel"
 		];
 		env = [

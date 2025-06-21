@@ -118,6 +118,8 @@
    ags
    typescript
    javascript-typescript-langserver
+   gtk4
+   graphene
 ];
  
   fonts.packages = with pkgs; [

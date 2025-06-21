@@ -108,8 +108,8 @@
    })
    lazygit
    retroarch
-   #ryujinx
-   #dolphin-emu
+   ryujinx
+   dolphin-emu
 ];
  
   fonts.packages = with pkgs; [

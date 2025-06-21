@@ -23,12 +23,11 @@
 			"swaync"
 			"blueman-applet"
 			"clipse -listen"
-			"nm-applet"
-			"waybar"  
+			"nm-applet"  
 			"hyprpaper" 
 			"syncthing"
-      "swayosd-server"
-      "nix run /etc/nixos/flakes/Hyprpanel/"
+		        "swayosd-server"
+		        "nix run /etc/nixos/flakes/HyprPanel"
 		];
 		env = [
 		 	"XCURSOR_SIZE,24"

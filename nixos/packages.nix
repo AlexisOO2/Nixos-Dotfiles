@@ -113,6 +113,7 @@
    libretro.melonds
    libretro.citra
    rpcs3
+   swayosd
 ];
  
   fonts.packages = with pkgs; [

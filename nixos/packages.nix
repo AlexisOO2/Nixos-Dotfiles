@@ -110,6 +110,9 @@
    retroarch
    ryujinx
    dolphin-emu
+   libretro.melonds
+   libretro.citra
+   rpcs3
 ];
  
   fonts.packages = with pkgs; [

@@ -125,6 +125,7 @@
    astal.gjs
    inputs.hyprpanel.packages.${pkgs.system}.default
    hyprpanel
+   pywal
 ];
  
   fonts.packages = with pkgs; [
